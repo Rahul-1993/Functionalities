@@ -13,7 +13,7 @@ let baseUrl = "https://api.openweathermap.org/data"
 let version = "/2.5"
 let endPoint = "/weather"
 
-let storiesUrlString = "https://hws.dev/news-1.json"
+let storiesUrlString = "https://hws.dev/news-3.json"
 
 let quizBaseUrl = "https://opentdb.com/api.php?"
 
