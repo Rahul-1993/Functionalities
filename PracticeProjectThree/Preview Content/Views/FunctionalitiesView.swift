@@ -16,7 +16,7 @@ struct ListContent: Identifiable {
 
 class FuntionalitiesViewModel: ObservableObject {
     @Published var listContent: [ListContent] = [
-        ListContent(id: 1, title: "Stories", view: AnyView(StoriesView()), image: "book.pages"),
+        ListContent(id: 1, title: "Stories", view: AnyView(StoriesSheetWebView()), image: "book.pages"),
         ListContent(id: 2, title: "Weather", view: AnyView(WeatherView()), image: "sun.max"),
         ListContent(id: 3, title: "Beers", view: AnyView(BeersView()), image: "wineglass.fill"),
         ListContent(id: 4, title: "Quiz", view: AnyView(QuizFormView()), image: "questionmark.app")

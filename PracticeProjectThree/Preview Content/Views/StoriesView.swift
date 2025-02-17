@@ -16,16 +16,15 @@ struct Stories: Identifiable, Codable {
 
 class StoriesDataService {
     private let genericDataService = GenericDataService()
-    let url = URL(string: "https://hws.dev/news-3.json")
     
     func fetchStories(from url: URL) async -> [Stories]? {
-        await genericDataService.fetchData(from: url)
+        await genericDataService.fetchData(from: URL(string: storiesUrlString)!)
     }
     
     func downloadStories() async -> [Stories]? {
         
         do {
-            let (data, response) = try await URLSession.shared.data(from: url!)
+            let (data, response) = try await URLSession.shared.data(from: URL(string: storiesUrlString)!)
             return handleResponse(data: data, response: response)
         } catch {
             print("Error")
