@@ -79,27 +79,34 @@ struct StoriesView: View {
     @StateObject private var viewModel = StoriesViewModel()
     
     var body: some View {
-        ZStack {
-            RadialGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))]),
-                           center: .topLeading,
-                           startRadius: 5,
-                           endRadius: UIScreen.main.bounds.height)
-            .ignoresSafeArea()
-            
-            List(viewModel.dataArray) { data in
-                VStack(alignment: .leading) {
-                    Text(data.title)
-                        .font(.headline)
-                    
-                    Text(data.strap)
-                        .font(.subheadline)
+        NavigationStack {
+            ZStack {
+                RadialGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))]),
+                               center: .topLeading,
+                               startRadius: 5,
+                               endRadius: UIScreen.main.bounds.height)
+                .ignoresSafeArea()
+                
+                List(viewModel.dataArray) { data in
+                    NavigationLink {
+                        WebView(url: data.url)
+                    } label: {
+                        VStack(alignment: .leading) {
+                            Text(data.title)
+                                .font(.headline)
+                            
+                            Text(data.strap)
+                                .font(.subheadline)
+                        }
+                    }
                 }
             }
+            .scrollContentBackground(.hidden)
+            .task {
+                await viewModel.loadDataGeneric()
+            }
         }
-        .scrollContentBackground(.hidden)
-        .task {
-            await viewModel.loadDataGeneric()
-        }
+
     }
 }
 
