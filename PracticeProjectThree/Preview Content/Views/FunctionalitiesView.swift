@@ -15,11 +15,14 @@ struct ListContent: Identifiable {
 }
 
 class FuntionalitiesViewModel: ObservableObject {
-    @Published var listContent: [ListContent] = [
+    let listContent: [ListContent] = [
         ListContent(id: 1, title: "Stories", view: AnyView(StoriesSheetWebView()), image: "book.pages"),
         ListContent(id: 2, title: "Weather", view: AnyView(WeatherView()), image: "sun.max"),
         ListContent(id: 3, title: "Beers", view: AnyView(BeersView()), image: "wineglass.fill"),
-        ListContent(id: 4, title: "Quiz", view: AnyView(QuizFormView()), image: "questionmark.app")
+        ListContent(id: 4, title: "Quiz", view: AnyView(QuizFormView()), image: "questionmark.app"),
+        ListContent(id: 5, title: "Market", view: AnyView(BasicMarketStackView()), image: "dollarsign.arrow.trianglehead.counterclockwise.rotate.90"),
+        ListContent(id: 6, title: "Trip Planner", view: AnyView(TripPlannerView()), image: "airplane.circle")
+        
     ]
 }
 
