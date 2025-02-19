@@ -127,7 +127,7 @@ class BasicMarketStackDetailsViewModel: ObservableObject {
     init(ticketString: String) {
         self.tickerString = ticketString
         
-        let eodUrlString = "\(marketBaseUrl)\(marketEodEndPoint)?access_key=\(marketApiKey)&symbols=\(ticketString)"
+        let eodUrlString = "\(marketBaseUrl)\(marketEodEndPoint)?access_key=\(marketApiKey)&symbols=\(ticketString)&limit=1"
         
         Task {
             try await loadDetailData(urlString: eodUrlString)
@@ -141,6 +141,7 @@ class BasicMarketStackDetailsViewModel: ObservableObject {
         
         do {
             if let fetchedDetailedData = try await dataService.fetchDetails(urlString: urlString) {
+                print(fetchedDetailedData)
                 await MainActor.run {
                     self.tickerDetail = fetchedDetailedData
                 }
