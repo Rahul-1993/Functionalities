@@ -48,6 +48,6 @@ struct CardView: View {
         Color.purple
             .ignoresSafeArea()
         
-        CardView(cardItems: TripItem(id: "1", title: "Trip Item", description: "Trip Description", location: "Mumbai, India", startData: Date(), endDate: Date(), image: "https://picsum.photos/200/310", isFavorite: true, isCompleted: false, isUpcoming: true))
+        CardView(cardItems: TripItem(id: "1", title: "Trip Item", description: "Trip Description", location: "Mumbai, India", startData: Date(), endDate: Date(), image: "https://picsum.photos/200/310", isFavorite: true, isCompleted: false, isUpcoming: true, tripImages: ["https://picsum.photos/200/310", "https://picsum.photos/200/310", "https://picsum.photos/200/310", "https://picsum.photos/200/310"]))
     }
 }
