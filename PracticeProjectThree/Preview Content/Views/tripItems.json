@@ -9,7 +9,8 @@
     "image": "https://picsum.photos/400/300",
     "isFavorite": false,
     "isCompleted": false,
-    "isUpcoming": true
+    "isUpcoming": true,
+    "tripImages": ["https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300"]
   },
   {
     "id": "123e4567-e89b-12d3-a456-426614174000",
@@ -21,7 +22,8 @@
     "image": "https://picsum.photos/400/300",
     "isFavorite": false,
     "isCompleted": false,
-    "isUpcoming": false
+    "isUpcoming": false,
+    "tripImages": ["https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300"]
   },
   {
     "id": "789e4567-e89b-12d3-a456-426614174111",
@@ -33,7 +35,8 @@
     "image": "https://picsum.photos/400/300",
     "isFavorite": true,
     "isCompleted": false,
-    "isUpcoming": false
+    "isUpcoming": false,
+    "tripImages": ["https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300"]
   },
   {
     "id": "e623e4567-e89b-12d3-a456-426614174222",
@@ -45,7 +48,8 @@
     "image": "https://picsum.photos/400/300",
     "isFavorite": false,
     "isCompleted": true,
-    "isUpcoming": false
+    "isUpcoming": false,
+    "tripImages": ["https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300"]
   },
   {
     "id": "f623e4567-e89b-12d3-a456-426614174333",
@@ -57,7 +61,8 @@
     "image": "https://picsum.photos/400/300",
     "isFavorite": true,
     "isCompleted": false,
-    "isUpcoming": true
+    "isUpcoming": true,
+    "tripImages": ["https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300","https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300"]
   },
   {
     "id": "g623e4567-e89b-12d3-a456-426614174444",
@@ -69,7 +74,8 @@
     "image": "https://picsum.photos/400/300",
     "isFavorite": false,
     "isCompleted": false,
-    "isUpcoming": false
+    "isUpcoming": false,
+    "tripImages": ["https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300"]
   },
   {
     "id": "h623e4567-e89b-12d3-a456-426614174555",
@@ -81,7 +87,8 @@
     "image": "https://picsum.photos/400/300",
     "isFavorite": false,
     "isCompleted": false,
-    "isUpcoming": true
+    "isUpcoming": true,
+    "tripImages": ["https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300"]
   },
   {
     "id": "i623e4567-e89b-12d3-a456-426614174666",
@@ -93,7 +100,8 @@
     "image": "https://picsum.photos/400/300",
     "isFavorite": false,
     "isCompleted": false,
-    "isUpcoming": false
+    "isUpcoming": false,
+    "tripImages": ["https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300"]
   },
   {
     "id": "j623e4567-e89b-12d3-a456-426614174777",
@@ -105,7 +113,8 @@
     "image": "https://picsum.photos/400/300",
     "isFavorite": true,
     "isCompleted": false,
-    "isUpcoming": false
+    "isUpcoming": false,
+    "tripImages": ["https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300"]
   },
   {
     "id": "k623e4567-e89b-12d3-a456-426614174888",
@@ -117,7 +126,8 @@
     "image": "https://picsum.photos/400/300",
     "isFavorite": false,
     "isCompleted": false,
-    "isUpcoming": false
+    "isUpcoming": false,
+    "tripImages": ["https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300"]
   },
   {
     "id": "l623e4567-e89b-12d3-a456-426614174999",
@@ -129,7 +139,8 @@
     "image": "https://picsum.photos/400/300",
     "isFavorite": true,
     "isCompleted": false,
-    "isUpcoming": false
+    "isUpcoming": false,
+    "tripImages": ["https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300"]
   },
   {
     "id": "m623e4567-e89b-12d3-a456-426614175111",
@@ -141,7 +152,8 @@
     "image": "https://picsum.photos/400/300",
     "isFavorite": false,
     "isCompleted": true,
-    "isUpcoming": false
+    "isUpcoming": false,
+    "tripImages": ["https://picsum.photos/400/300"]
   },
   {
     "id": "n623e4567-e89b-12d3-a456-426614175222",
@@ -153,7 +165,8 @@
     "image": "https://picsum.photos/400/300",
     "isFavorite": true,
     "isCompleted": false,
-    "isUpcoming": false
+    "isUpcoming": false,
+    "tripImages": ["https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300", "https://picsum.photos/400/300"]
   }
 ]
 
