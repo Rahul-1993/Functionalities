@@ -18,6 +18,7 @@ struct TripItem: Identifiable, Codable {
     let isFavorite: Bool
     let isCompleted: Bool
     let isUpcoming: Bool
+    let tripImages: [String]
 }
 
 struct TripCategories: Identifiable {
