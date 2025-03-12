@@ -21,7 +21,8 @@ class FuntionalitiesViewModel: ObservableObject {
         ListContent(id: 3, title: "Beers", view: AnyView(BeersView()), image: "wineglass.fill"),
         ListContent(id: 4, title: "Quiz", view: AnyView(QuizFormView()), image: "questionmark.app"),
         ListContent(id: 5, title: "Market", view: AnyView(BasicMarketStackView()), image: "dollarsign.arrow.trianglehead.counterclockwise.rotate.90"),
-        ListContent(id: 6, title: "Trip Planner", view: AnyView(TripPlannerView()), image: "airplane.circle")
+        ListContent(id: 6, title: "Trip Planner", view: AnyView(TripPlannerView()), image: "airplane.circle"),
+        ListContent(id: 7, title: "Data Structure", view: AnyView(DataStructureView()), image: "fossil.shell")
         
     ]
 }
