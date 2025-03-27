@@ -17,7 +17,10 @@ class DataStructureViewModel: ObservableObject {
     
     let dataStructureContents : [DataStructureListContent] = [
         DataStructureListContent(id: "1", title: "Five Times Show", view: AnyView(FiveTimesShowView())),
-        DataStructureListContent(id: "2", title: "Subscript No Repeat", view: AnyView(SubscriptRepeatView()))
+        DataStructureListContent(id: "2", title: "Subscript No Repeat", view: AnyView(SubscriptRepeatView())),
+        DataStructureListContent(id: "3", title: "Sorting", view: AnyView(SortingView())),
+        DataStructureListContent(id: "4", title: "Get Max Area", view: AnyView(GetMaxAreaView())),
+        DataStructureListContent(id: "5", title: "Two Sum", view: AnyView(TwoSumView()))
     ]
     
 }
