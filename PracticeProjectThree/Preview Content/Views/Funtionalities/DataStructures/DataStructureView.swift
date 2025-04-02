@@ -20,7 +20,8 @@ class DataStructureViewModel: ObservableObject {
         DataStructureListContent(id: "2", title: "Subscript No Repeat", view: AnyView(SubscriptRepeatView())),
         DataStructureListContent(id: "3", title: "Sorting", view: AnyView(SortingView())),
         DataStructureListContent(id: "4", title: "Get Max Area", view: AnyView(GetMaxAreaView())),
-        DataStructureListContent(id: "5", title: "Two Sum", view: AnyView(TwoSumView()))
+        DataStructureListContent(id: "5", title: "Two Sum", view: AnyView(TwoSumView())),
+        DataStructureListContent(id: "6", title: "Vowel", view: AnyView(VowelCountAndStringView()))
     ]
     
 }
