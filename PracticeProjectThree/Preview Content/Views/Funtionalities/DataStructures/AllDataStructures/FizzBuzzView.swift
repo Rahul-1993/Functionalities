@@ -61,9 +61,12 @@ struct FizzBuzzView: View {
                         viewModel.fizzBuzzSwitch(inputInteger: input)
                     }
                 }
-            List(viewModel.outputArray, id: \.self) { data in
-                Text(data)
+            if viewModel.outputArray.count > 1 {
+                List(viewModel.outputArray, id: \.self) { data in
+                    Text(data)
+                }
             }
+
         }
     }
 }
