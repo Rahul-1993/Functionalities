@@ -23,6 +23,15 @@ let marketBaseUrl = "http://api.marketstack.com/v2"
 let marketTickerEndPoint = "/tickerslist"
 let marketEodEndPoint = "/eod"
 
+///Mark:- Cars Endpoint
+
+let carBaseUrl = "https://carapi.app/api/"
+let carAuth = "auth/login"
+
+
+///Mark:- Product
+let productUrl = "https://api.escuelajs.co/api/v1/products"
+
 extension String {
     func decodedHTMLEntities() -> String {
         return self.replacingOccurrences(of: "&quot;", with: "'")
