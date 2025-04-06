@@ -23,8 +23,9 @@ class FuntionalitiesViewModel: ObservableObject {
         ListContent(id: 5, title: "Market", view: AnyView(BasicMarketStackView()), image: "dollarsign.arrow.trianglehead.counterclockwise.rotate.90"),
         ListContent(id: 6, title: "Trip Planner", view: AnyView(TripPlannerView()), image: "airplane.circle"),
         ListContent(id: 7, title: "Cars", view: AnyView(CarsView()), image: "car"),
-        ListContent(id: 8, title: "Data Structure", view: AnyView(DataStructureView()), image: "fossil.shell"),
-        ListContent(id: 9, title: "Property Wrappers", view: AnyView(PropertyWrappersView()), image: "swift")
+        ListContent(id: 8, title: "Products", view: AnyView(ProductsView()), image: "bag"),
+        ListContent(id: 9, title: "Data Structure", view: AnyView(DataStructureView()), image: "fossil.shell"),
+        ListContent(id: 10, title: "Property Wrappers", view: AnyView(PropertyWrappersView()), image: "swift")
         
     ]
 }
