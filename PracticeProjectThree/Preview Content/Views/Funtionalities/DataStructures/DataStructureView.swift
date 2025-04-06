@@ -21,7 +21,9 @@ class DataStructureViewModel: ObservableObject {
         DataStructureListContent(id: "3", title: "Sorting", view: AnyView(SortingView())),
         DataStructureListContent(id: "4", title: "Get Max Area", view: AnyView(GetMaxAreaView())),
         DataStructureListContent(id: "5", title: "Two Sum", view: AnyView(TwoSumView())),
-        DataStructureListContent(id: "6", title: "Vowel", view: AnyView(VowelCountAndStringView()))
+        DataStructureListContent(id: "6", title: "Vowel", view: AnyView(VowelCountAndStringView())),
+        DataStructureListContent(id: "7", title: "Palindrome", view: AnyView(IsPalindrome())),
+        DataStructureListContent(id: "8", title: "Fizz Buzz", view: AnyView(FizzBuzzView()))
     ]
     
 }
