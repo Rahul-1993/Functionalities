@@ -87,7 +87,14 @@ class ProductsViewModel: ObservableObject {
         if let data = returnedData {
             await MainActor.run {
                 self.productArray = data
+                saveProductToUserDefaults(data: data)
             }
+        }
+    }
+    
+    func saveProductToUserDefaults(data: [Product]) {
+        if let encoded = try? JSONEncoder().encode(data) {
+            UserDefaults.standard.set(encoded, forKey: "myProducts")
         }
     }
     
