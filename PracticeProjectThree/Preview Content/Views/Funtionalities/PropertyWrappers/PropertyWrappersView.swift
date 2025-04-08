@@ -16,7 +16,8 @@ struct PropertyWrappersList: Identifiable {
 
 class PropertyWrappersViewModel: ObservableObject {
     let propertyList : [PropertyWrappersList] = [
-        PropertyWrappersList(id: 1, propertyName: "App Storage", propertyView: AnyView(AppStorageView()), propertyImage: "swift")
+        PropertyWrappersList(id: 1, propertyName: "App Storage", propertyView: AnyView(AppStorageView()), propertyImage: "swift"),
+        PropertyWrappersList(id: 2, propertyName: "Environment Object", propertyView: AnyView(FirstEnvironmentView()), propertyImage: "swift")
     ]
 }
 
@@ -49,4 +50,5 @@ struct PropertyWrappersView: View {
 
 #Preview {
     PropertyWrappersView()
+        .environmentObject(CounterViewModel())
 }
