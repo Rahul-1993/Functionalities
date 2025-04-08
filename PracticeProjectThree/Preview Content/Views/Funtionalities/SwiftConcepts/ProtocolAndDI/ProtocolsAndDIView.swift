@@ -35,16 +35,17 @@ class LiveWeatherDataService: WeatherService {
 
 class ProtocolsAndDIViewModel: ObservableObject {
     @Published var weatherData: String = ""
+    @Published var metric: Bool = false
     
     let service: WeatherService
     
     init(service: WeatherService) {
         self.service = service
         
-        getWeather(metric: false)
+        getWeather()
     }
     
-    func getWeather(metric : Bool) {
+    func getWeather() {
         switch metric {
         case false : self.weatherData = service.getDataInCelcius()
         case true : self.weatherData = service.getDataInFarenheit()
@@ -63,9 +64,9 @@ struct ProtocolsAndDIView: View {
     
     var body: some View {
         
-        Toggle("Toggle", isOn: $metricTracker)
-            .onChange(of: metricTracker) { newValue, oldvalue in
-                viewModel.getWeather(metric: newValue)
+        Toggle("Toggle", isOn: $viewModel.metric)
+            .onChange(of: viewModel.metric) { newValue, oldValue in
+                viewModel.getWeather()
             }
         
         Text(viewModel.weatherData)
