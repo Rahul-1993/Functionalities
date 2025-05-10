@@ -28,15 +28,22 @@ enum ErrorAuth: Error {
 
 class LoginAuthentication {
     
-    func loginUsingPassword(name: String, pass: String) -> String {
+    func loginUsingPassword(name: String?, pass: String?) -> String {
 //        let returnString = "UsingPassword \(name) \(pass)"
 //        return returnString
         
-        do {
-            let returnValue = "UsingPassword \(name) \(pass)"
-            return returnValue
-        } catch {
+        guard let userCount = name,
+              let password = pass else {
+            errorResponse(error: .randomError)
+            return ""
+        }
+        
+        if userCount.count < 5 {
             errorResponse(error: .decodingError)
+            return ""
+        } else {
+            let returnValue = "UsingPassword \(String(describing: userCount)) \(String(describing: password))"
+            return returnValue
         }
     }
     
@@ -88,7 +95,7 @@ struct EnumPracticeView: View {
     var body: some View {
         VStack {
             Button {
-                viewModel.loginFunction(using: .biometric(.fingerprint))
+                viewModel.loginFunction(using: .password("Hell023", ""))
             } label: {
                 Label("Login Using biometric", systemImage: "cloud")
             }
