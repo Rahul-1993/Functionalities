@@ -23,7 +23,9 @@ class DataStructureViewModel: ObservableObject {
         DataStructureListContent(id: "5", title: "Two Sum", view: AnyView(TwoSumView())),
         DataStructureListContent(id: "6", title: "Vowel", view: AnyView(VowelCountAndStringView())),
         DataStructureListContent(id: "7", title: "Palindrome", view: AnyView(IsPalindrome())),
-        DataStructureListContent(id: "8", title: "Fizz Buzz", view: AnyView(FizzBuzzView()))
+        DataStructureListContent(id: "8", title: "Fizz Buzz", view: AnyView(FizzBuzzView())),
+        DataStructureListContent(id: "9", title: "Reverse String", view: AnyView(ReverseStringView())),
+        DataStructureListContent(id: "10", title: "First Non Recurring character", view: AnyView(FirstNonRecurringElementView()))
     ]
     
 }
