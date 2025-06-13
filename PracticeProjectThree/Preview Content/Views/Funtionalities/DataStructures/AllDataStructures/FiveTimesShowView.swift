@@ -62,6 +62,7 @@ struct FiveTimesShowView: View {
             .frame(width: 250, height: 200)
             .background(.purple.opacity(0.7))
             .clipShape(RoundedRectangle(cornerRadius: 20))
+            .multilineTextAlignment(.center)
         }
     }
 }
