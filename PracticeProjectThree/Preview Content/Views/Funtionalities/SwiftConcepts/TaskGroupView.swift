@@ -58,10 +58,8 @@ struct TaskGroupView: View {
                     NavigationLink {
                         WebView(url: data.url)
                     } label: {
-                        Label(data.title, image: "")
+                        Label(data.title, systemImage: "swift")
                     }
-
-                    Text(data.title)
                 }
             }
             .navigationTitle("Stories")

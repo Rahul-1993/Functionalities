@@ -16,7 +16,9 @@ struct ListSwiftConcepts: Identifiable {
 
 class SwiftConceptsViewModel: ObservableObject {
     let swiftConceptsList: [ListSwiftConcepts] = [
-        ListSwiftConcepts(id: 1, conceptName: "Protocol & DI", conceptView: AnyView(FirstProtocolView()), conceptImage: "swift")
+        ListSwiftConcepts(id: 1, conceptName: "Protocol & DI", conceptView: AnyView(FirstProtocolView()), conceptImage: "swift"),
+        ListSwiftConcepts(id: 2, conceptName: "Enums", conceptView: AnyView(EnumPracticeView()), conceptImage: "swift"),
+        ListSwiftConcepts(id: 3, conceptName: "Task Group", conceptView: AnyView(TaskGroupView()), conceptImage: "swift")
     ]
 }
 
