@@ -55,8 +55,9 @@ struct BasicAsyncAwaitView: View {
             }
         } label: {
             Text("Enter")
+                .primaryButtonStyle()
         }
-
+        .background(.black)
     }
 }
 
